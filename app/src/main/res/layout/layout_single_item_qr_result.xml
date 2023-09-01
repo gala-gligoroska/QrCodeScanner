@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D5EEF3"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#28378A"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/resultTypeIcon"
+        app:layout_constraintTop_toTopOf="@+id/resultTypeIcon"
+        tools:text="Resiusdbsdsdsdsdsdsdsdsdsdsdsdssnvdnsdsdsgfdfsgfdfsdsf" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/resultTypeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_black_shape"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="15dp"
+        android:src="@drawable/ic_text_documents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#7897B6"
+        app:layout_constraintBottom_toBottomOf="@+id/resultTypeIcon"
+        app:layout_constraintStart_toEndOf="@+id/resultTypeIcon"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:text="15-07-2010 03-45AM" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/favouriteIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_full_yellow_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTime"
+        app:layout_constraintEnd_toEndOf="@+id/result"
+        app:layout_constraintTop_toTopOf="@+id/tvTime" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTypeIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
